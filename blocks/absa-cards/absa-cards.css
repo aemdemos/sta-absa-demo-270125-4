@@ -1,0 +1,72 @@
+
+.absa-cards-wrapper .absa-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.absa-cards-wrapper .absa-cards > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  flex: 1 1 calc(33.333% - 24px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: transparent;
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body {
+  margin: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-image,
+.absa-cards-wrapper .absa-cards .absa-cards-card-body {
+  width: 100%;
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-image picture,
+.absa-cards-wrapper .absa-cards .absa-cards-card-body h5,
+.absa-cards-wrapper .absa-cards .button-container {
+  display: block;
+  margin: 0;
+}
+
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.absa-cards-wrapper .absa-cards .button-container {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.absa-cards-wrapper .absa-cards .button {
+  color: #e60000;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.absa-cards-wrapper .absa-cards .button::after {
+  content: ' ➔';
+  margin-left: 5px;
+}
